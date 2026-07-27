@@ -247,6 +247,21 @@
     </style>
 </head>
 <body>
+<!-- START OF NAVBAR CODE -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Categories ▼</button>
+    <div class="dropdown-content">
+      <a href="page1.html">Category 1</a>
+      <a href="page2.html">Category 2</a>
+      <a href="page3.html">Category 3</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </div>
+</div>
+
 <style>
   /* Lock the navbar to the absolute top of the screen */
   .navbar {
@@ -261,7 +276,7 @@
     flex-direction: row !important;
     align-items: center !important;
     box-sizing: border-box !important;
-    z-index: 99999 !important; /* Forces it above everything else */
+    z-index: 99999 !important; 
     margin: 0 !important;
     padding: 0 10px !important;
   }
@@ -297,7 +312,7 @@
   .dropdown-content {
     display: none;
     position: absolute !important;
-    top: 50px !important; /* Drops right below the 50px navbar */
+    top: 50px !important; 
     left: 0 !important;
     background-color: #f9f9f9 !important;
     min-width: 160px !important;
@@ -324,12 +339,14 @@
     display: block !important;
   }
 
-  /* CRUCIAL: Push the rest of your website content down 
-     so it doesn't get hidden underneath the fixed navbar */
+  /* Push the rest of your website content down so it doesn't get covered */
   body {
     padding-top: 60px !important;
   }
 </style>
+<!-- END OF NAVBAR CODE -->
+
+	
     <div class="document-container">
         <div class="public-header">
 		        <h2>Professional Preface &amp; Context</h2>
