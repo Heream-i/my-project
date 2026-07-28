@@ -1,0 +1,81 @@
+/* Lock the navbar to the absolute top of the screen */
+  .navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 50px !important;
+    background-color: #fff !important; /*#333  */
+    font-family: Arial, sans-serif !important;
+    display: flex !important;
+    flex-direction: row !important;
+	justify-content: flex-end !important; /* THIS ALIGNS EVERYTHING TO THE RIGHT */
+    align-items: center !important;
+    box-sizing: border-box !important;
+    z-index: 99999 !important; 
+    margin: 0 !important;
+    padding: 0 10px !important;
+  }
+
+  /* Main Links & Dropdown Button */
+  .navbar a, .dropdown .dropbtn {
+    display: inline-block !important;
+    color: #8B0000 !important;	/* white */
+    text-align: center !important;
+    padding: 14px 20px !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Change color on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #555 !important;
+  }
+
+  /* Container for Dropdown */
+  .dropdown {
+    position: relative !important;
+    display: inline-block !important;
+    height: 100% !important;
+  }
+
+  /* Dropdown Menu Box */
+  .dropdown-content {
+    display: none;
+    position: absolute !important;
+    top: 50px !important; 
+    left: 0 !important;
+    background-color: #f9f9f9 !important;
+    min-width: 160px !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
+    z-index: 100000 !important;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black !important;
+    padding: 12px 16px !important;
+    text-decoration: none !important;
+    display: block !important;
+    text-align: left !important;
+    height: auto !important;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1 !important;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block !important;
+  }
+
+  /* Push the rest of your website content down so it doesn't get covered */
+  body {
+    padding-top: 60px !important;
+  }

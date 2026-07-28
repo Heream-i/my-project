@@ -1,0 +1,28 @@
+:root {
+            --primary-color: #721c24; 
+            --accent-blue: #1a2b4c;
+            --text-color: #2d3748;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e9ecef;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .document-container {
+            background-color: var(--card-bg);
+            max-width: 850px;
+            width: 100%;
+            padding: 50px 60px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border-top: 8px solid var(--primary-color);
+            box-sizing: border-box;
+        }
+       
