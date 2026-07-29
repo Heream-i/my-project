@@ -34,7 +34,7 @@
 
   /* Change color on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #555 !important;
+    background-color: #E7E7E7 !important;
   }
 
   /* Container for Dropdown */
