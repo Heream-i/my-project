@@ -1,81 +1,139 @@
-/* Lock the navbar to the absolute top of the screen */
-  .navbar {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 50px !important;
-    background-color: #fff !important; /*#333  */
-    font-family: Arial, sans-serif !important;
-    display: flex !important;
-    flex-direction: row !important;
-	justify-content: flex-end !important; /* THIS ALIGNS EVERYTHING TO THE RIGHT */
-    align-items: center !important;
-    box-sizing: border-box !important;
-    z-index: 99999 !important; 
-    margin: 0 !important;
-    padding: 0 10px !important;
-  }
+/* Reset basic margins for a clean start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  /* Main Links & Dropdown Button */
-  .navbar a, .dropdown .dropbtn {
-    display: inline-block !important;
-    color: #8B0000 !important;	/* white */
-    text-align: center !important;
-    padding: 14px 20px !important;
-    text-decoration: none !important;
-    font-size: 16px !important;
-    background: none !important;
-    border: none !important;
-    cursor: pointer !important;
-    height: 100% !important;
-    box-sizing: border-box !important;
-  }
+body {
+  font-family: Arial, sans-serif;
+}
 
-  /* Change color on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #E7E7E7 !important;
-  }
+/* Push website content down so the fixed navbar doesn't cover it */
+.content {
+  padding-top: 70px; 
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  /* Container for Dropdown */
-  .dropdown {
-    position: relative !important;
-    display: inline-block !important;
-    height: 100% !important;
-  }
+/* Core Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle bottom shadow */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Pushes logo left, links right */
+  align-items: center;
+  padding: 0 20px;
+  z-index: 9999;
+}
 
-  /* Dropdown Menu Box */
-  .dropdown-content {
-    display: none;
-    position: absolute !important;
-    top: 50px !important; 
-    left: 0 !important;
-    background-color: #f9f9f9 !important;
-    min-width: 160px !important;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
-    z-index: 100000 !important;
-  }
+/* Left Side Logo styling #8B0000 */
+/* Container alignment */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black !important;
-    padding: 12px 16px !important;
-    text-decoration: none !important;
-    display: block !important;
-    text-align: left !important;
-    height: auto !important;
-  }
+/* Flexbox layout to sit text and icon side-by-side */
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Neat space between text and scales */
+  text-decoration: none;
+}
 
-  .dropdown-content a:hover {
-    background-color: #f1f1f1 !important;
-  }
+/* Brand text styling */
+.nav-logo .logo-text {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block !important;
-  }
+/* FIXES THE BLOB & MAKES IT SLIGHTLY SMALLER */
+.nav-logo .scale-icon {
+  width: 50px !important;  /* Reduced from 24px to look smaller and balanced */
+  height: 50px !important; /* Reduced from 24px to look smaller and balanced */
+  color: black;          /* Applies your exact dark red color directly to the lines */
+  display: inline-block;
+  flex-shrink: 0;          /* Prevents any horizontal squishing */
+}
 
-  /* Push the rest of your website content down so it doesn't get covered */
-  body {
-    padding-top: 60px !important;
-  }
+
+/* Right Side Links Layout */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+
+/* Shared styles for normal links and the dropdown button */
+/* Shared styles for normal links and the dropdown button */
+.nav-links a, 
+.dropdown .dropbtn {
+  display: inline-block;
+  color: #8B0000;
+  text-align: center;
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 50px;       
+  line-height: 50px;  
+  font-weight: bold; /* ADDED: This makes Home, Contact, and all main buttons bold */
+}
+
+/* Background hover color for right-side items */
+.nav-links a:hover, 
+.dropdown:hover .dropbtn {
+  background-color: #E7E7E7;
+}
+
+/* Container for Dropdown */
+.dropdown {
+  position: relative;
+  height: 100%;
+}
+
+/* Dropdown Hidden Box */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 50px; /* Sits directly below the 50px navbar */
+  right: 0;  /* aligns the box to the right edge so it doesn't clip off-screen */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10000;
+}
+
+/* Individual links inside the dropdown drawer */
+.dropdown-content a {
+  color: #333333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  height: auto;
+  line-height: normal; /* Resets the navbar vertical centering */
+}
+
+/* Hover style inside the dropdown menu */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #8B0000;
+}
+
+/* Show the dropdown menu when hovering over the container */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
