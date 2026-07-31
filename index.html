@@ -16,9 +16,29 @@
 </head>
 <body>
 <!-- START OF NAVBAR CODE -->
-<div class="navbar">
-  <a href="index.html">Home</a>
   
+ <nav class="navbar">
+  <!-- Left Side: Brand Logo or Text -->
+  <!--<div class="nav-logo">
+    <a href="#">For The People</a>
+  </div> -->
+  
+    <div class="nav-logo">
+    <a href="#">
+      <span class="logo-text">For The People</span>
+      <!-- Clean, stroke-based scales icon that cannot distort or blob -->
+      <svg class="scale-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://w3.org">
+        <path d="M12 3v17M12 5l7 2M12 5L5 7M19 7v5M5 7v5M16 12a3 3 0 0 0 6 0M2 12a3 3 0 0 0 6 0M8 20h8" />
+      </svg>
+    </a>
+  </div>
+
+
+  <!-- Right Side: Navigation Links & Dropdown -->
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="https://heream-i.github.io/my-project/form.html">Contact</a>
+
   <div class="dropdown">
     <button class="dropbtn">Coming Soon ▼</button>
     <div class="dropdown-content">
@@ -39,6 +59,14 @@
   </div>
 
 </div>
+</nav>
+
+<!-- Main content container to prevent text from being hidden behind the navbar -->
+<main class="content">
+  <!--<h1>Welcome to My New Website</h1>
+  <p>Your content goes here...</p> -->
+
+
 <!-- END OF NAVBAR CODE -->
 	
     <div class="document-container">
@@ -133,7 +161,7 @@
             
             <p style="font-weight: bold; font-family: Arial, sans-serif; color: var(--primary-color); margin-bottom: 0;">We call upon Parliament to amend primary building legislation to provide ordinary British citizens with a direct, cost-free statutory right to independent audit and administrative appeal when a local authority fails to execute its public law duties lawfully.</p>
         </div>
-		         <!-- FOOTER WITH LEGAL LINKS AND DISCLAIMER. -->
+		         <!-- COPY FOOTER WITH LEGAL LINKS AND DISCLAIMER. -->
         <footer>
 			<p>© <span id="current-year"></span>. All rights reserved. | Read our <a href="terms_of_use" target="_blank"><strong>Terms of Use</strong></a> & <a href="privacy_policy" target="_blank">Privacy Policy</a>.</p>
 			<button id="backToTop" class="back-to-top" title="Go to top" aria-label="Back to top">↑</button>
@@ -166,6 +194,6 @@
             </div>
         </footer>
 		</div>
-		
+		<!-- COPY TO HERE. -->
 </body>
 </html>
