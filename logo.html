@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<!--<meta name="robots" content="noindex, nofollow">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <title>Logo</title>
+	<style>
+	/* Reset basic margins for a clean start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Push website content down so the fixed navbar doesn't cover it */
+.content {
+  padding-top: 70px; 
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Core Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Pushes logo left, links right */
+  align-items: center;
+  padding: 0 20px;
+  z-index: 9999;
+}
+
+/* Left Side Logo container alignment */
+/* Left Side Logo container alignment */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* NEW: Keeps the text and the scales image perfectly side-by-side and centered */
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Creates a clean, elegant spacing between text and the image */
+  text-decoration: none;
+}
+
+/* NEW: Styles your text to look bold, dark red, and matched to the navbar size */
+.nav-logo .logo-text {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Logo Image auto-sizing to fit nicely inside the 50px navbar */
+.logo-image {
+  height: 25px; /* Slightly reduced height to match the text height perfectly */
+  width: auto;  /* Keeps your image proportions perfectly crisp */
+  display: block;
+}
+
+
+/* Right Side Links Layout */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+
+/* Shared styles for normal links and the dropdown button */
+.nav-links a, 
+.dropdown .dropbtn {
+  display: inline-block;
+  color: #8B0000;
+  text-align: center;
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 50px;       
+  line-height: 50px;  
+}
+
+/* MAKES THE "COMING SOON" TEXT BOLD */
+.coming-soon-btn {
+  font-weight: bold;
+}
+
+/* Background hover color for right-side items */
+.nav-links a:hover, 
+.dropdown:hover .dropbtn {
+  background-color: #E7E7E7;
+}
+
+/* Container for Dropdown */
+.dropdown {
+  position: relative;
+  height: 100%;
+}
+
+/* Dropdown Hidden Box */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 50px; 
+  right: 0;  
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10000;
+}
+
+/* Individual links inside the dropdown drawer */
+.dropdown-content a {
+  color: #333333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  height: auto;
+  line-height: normal; 
+}
+
+/* Hover style inside the dropdown menu */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #8B0000;
+}
+How do you add text in front of image,
+
+/* Show the dropdown menu when hovering over the container */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    </style>
+</head>
+<body>
+	
+	<!-- START OF NAVBAR CODE -->
+<nav class="navbar">
+    <!-- Left Side: Text and Image Logo -->
+  <div class="nav-logo">
+    <a href="#">
+      <span class="logo-text">For The People</span>
+      <img src="scales.png" alt="Website Logo" class="logo-image">
+    </a>
+  </div>
+
+  
+  
+
+  <!-- Right Side: Navigation Links & Dropdowns -->
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    
+    <!-- First "Coming Soon" Dropdown -->
+    <div class="dropdown">
+      <button class="dropbtn coming-soon-btn">Coming Soon ▼</button>
+      <div class="dropdown-content">
+        <a href="#service1">Service 1</a>
+        <a href="#service2">Service 2</a>
+      </div>
+    </div>
+
+    <!-- Second "Coming Soon" Dropdown -->
+    <div class="dropdown">
+      <button class="dropbtn coming-soon-btn">Coming Soon ▼</button>
+      <div class="dropdown-content">
+        <a href="#product1">Product 1</a>
+        <a href="#product2">Product 2</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Main content container -->
+<main class="content">
+  <h1>Welcome to My New Website</h1>
+  <p>Your content goes here...</p>
+</main>
+</body>
+</html>
