@@ -24,7 +24,7 @@ body {
   width: 100%;
   height: 50px;
   background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle bottom shadow */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
   display: flex;
   flex-direction: row;
   justify-content: space-between; /* Pushes logo left, links right */
@@ -33,38 +33,35 @@ body {
   z-index: 9999;
 }
 
-/* Left Side Logo styling #8B0000 */
-/* Container alignment */
+/* Left Side Logo container alignment */
+/* Left Side Logo container alignment */
 .nav-logo {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-/* Flexbox layout to sit text and icon side-by-side */
+/* NEW: Keeps the text and the scales image perfectly side-by-side and centered */
 .nav-logo a {
   display: flex;
   align-items: center;
-  gap: 8px; /* Neat space between text and scales */
+  gap: 8px; /* Creates a clean, elegant spacing between text and the image */
   text-decoration: none;
 }
 
-/* Brand text styling */
+/* NEW: Styles your text to look bold, dark red, and matched to the navbar size */
 .nav-logo .logo-text {
   color: black;
   font-size: 24px;
   font-weight: bold;
 }
 
-/* FIXES THE BLOB & MAKES IT SLIGHTLY SMALLER */
-.nav-logo .scale-icon {
-  width: 50px !important;  /* Reduced from 24px to look smaller and balanced */
-  height: 50px !important; /* Reduced from 24px to look smaller and balanced */
-  color: black;          /* Applies your exact dark red color directly to the lines */
-  display: inline-block;
-  flex-shrink: 0;          /* Prevents any horizontal squishing */
+/* Logo Image auto-sizing to fit nicely inside the 50px navbar */
+.logo-image {
+  height: 25px; /* Slightly reduced height to match the text height perfectly */
+  width: auto;  /* Keeps your image proportions perfectly crisp */
+  display: block;
 }
-
 
 /* Right Side Links Layout */
 .nav-links {
