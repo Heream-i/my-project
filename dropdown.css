@@ -34,14 +34,13 @@ body {
 }
 
 /* Left Side Logo container alignment */
-/* Left Side Logo container alignment */
 .nav-logo {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-/* NEW: Keeps the text and the scales image perfectly side-by-side and centered */
+/* Keeps the text and the scales image perfectly side-by-side and centered */
 .nav-logo a {
   display: flex;
   align-items: center;
@@ -49,7 +48,7 @@ body {
   text-decoration: none;
 }
 
-/* NEW: Styles your text to look bold, dark red, and matched to the navbar size */
+/* Styles your text to look bold, dark red, and matched to the navbar size */
 .nav-logo .logo-text {
   color: black;
   font-size: 24px;
@@ -72,7 +71,6 @@ body {
 }
 
 /* Shared styles for normal links and the dropdown button */
-/* Shared styles for normal links and the dropdown button */
 .nav-links a, 
 .dropdown .dropbtn {
   display: inline-block;
@@ -86,7 +84,7 @@ body {
   cursor: pointer;
   height: 50px;       
   line-height: 50px;  
-  font-weight: bold; /* ADDED: This makes Home, Contact, and all main buttons bold */
+  font-weight: bold; /* This makes Home, Contact, and all main buttons bold */
 }
 
 /* Background hover color for right-side items */
@@ -133,4 +131,37 @@ body {
 /* Show the dropdown menu when hovering over the container */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVE PATCH FOR IPHONE AND SMALL SCREENS
+   ========================================================================== */
+@media screen and (max-width: 620px) {
+  /* Reduce navbar container padding */
+  .navbar {
+    padding: 0 8px;
+  }
+
+  /* Shrink the logo text so it takes up less space */
+  .nav-logo .logo-text {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* Scale the scales image down smoothly to match */
+  .logo-image {
+    height: 30px;
+  }
+
+  /* Tighten spacing between the interactive link items */
+  .nav-links a, 
+  .dropdown .dropbtn {
+    padding: 0 6px;
+    font-size: 13px;
+  }
+
+  /* Increase dropdown menu width slightly on mobile so long text fits */
+  .dropdown-content {
+    min-width: 175px;
+  }
 }
