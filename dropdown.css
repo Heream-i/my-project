@@ -165,3 +165,7 @@ body {
     min-width: 175px;
   }
 }
+/* Toggles dropdown visibility via JavaScript touch tracking */
+.dropdown.active .dropdown-content {
+  display: block;
+}
