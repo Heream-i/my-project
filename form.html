@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" href="back_to_top.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="spinner.css">
-	<!--<link rel="stylesheet" type="text/css" href="disclaimer.css"> -->
-	<link rel="stylesheet" type="text/css" href="font.css">
+    <link rel="stylesheet" type="text/css" href="font.css">
     <style>
         body { font-family: sans-serif; max-width: 650px; margin: 0 auto; padding: 10px; } 
         .form-group { margin-bottom: 15px; }
@@ -38,167 +37,141 @@
             outline: 2px solid #0066cc !important;
             outline-offset: 4px;
             border-radius: 2px;
+        } /* FIXED: Added missing closing bracket */
     </style>
 </head>
 <body>
 
 <div class="main-container">
     <!-- START OF NAVBAR CODE -->
-<nav class="navbar">
-    <!-- Left Side: Text and Image Logo -->
-  <div class="nav-logo">
-    <a href="#">
-      <span class="logo-text">For The People</span>
-      <img src="scales.PNG" alt="Website Logo" class="logo-image">
-    </a>
-  </div>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#">
+                <span class="logo-text">For The People</span>
+                <img src="scales.PNG" alt="Website Logo" class="logo-image">
+            </a>
+        </div>
 
-  <!-- Right Side: Navigation Links & Dropdown -->
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-	<a href="form.html" target="_self">Contact</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="form.html" target="_self">Contact</a>
 
-  <div class="dropdown">
-    <button class="dropbtn">Coming Soon ▼</button>
-    <div class="dropdown-content">
-      <a href="taxed.html" target="_blank">Paying Taxes</a>
-      <a href="bcd_appeal.html" target="_blank">BCD Right of Appeal</a>
-      <a href="index.html">Category 3</a>
-      <a href="index.html">Category 4</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Coming Soon ▼</button>
-    <div class="dropdown-content">
-      <a href="index.html">Category 1</a>
-      <a href="index.html">Category 2</a>
-      <a href="index.html">Category 3</a>
-      <a href="index.html">Category 4</a>
-    </div>
-  </div>
-</div>
-</nav>
+            <div class="dropdown">
+                <button class="dropbtn">Coming Soon ▼</button>
+                <div class="dropdown-content">
+                    <a href="taxed.html" target="_blank">Paying Taxes</a>
+                    <a href="bcd_appeal.html" target="_blank">BCD Right of Appeal</a>
+                    <a href="index.html">Category 3</a>
+                    <a href="index.html">Category 4</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Coming Soon ▼</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Category 1</a>
+                    <a href="index.html">Category 2</a>
+                    <a href="index.html">Category 3</a>
+                    <a href="index.html">Category 4</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<!-- Main content container to prevent text from being hidden behind the navbar -->
-<main class="content">
- 
-<!-- END OF NAVBAR CODE -->
+    <!-- MAIN CONTENT AREA -->
+    <main class="content">
+        <!-- HEADER -->
+        <header style="margin-top: 60px; padding-top: 20px;">
+            <div class="public-header">		
+                <p class="custom3" style="font-size: 2rem; font-weight: bold; margin: 0 0 10px 0;">Contact Form</p>
+                <p class="custom4">Published as an independent commentary and public interest review revealing local authority building control negligence under primary UK law.</p>
+                <br>
+                <p class="custom5" style="color: red; font-weight: bold;">By accessing and using this website, you agree to our <a href="terms_of_use.html" target="_blank">Terms of Use</a>, <a href="privacy_policy.html" target="_blank">Privacy Policy</a>, and Legal Disclaimer (see below).</p>
+            </div>
+            <br>
+            <div id="header-box" style="background-color: #E5E4E2; border: 1px solid #808080; border-left: 5px solid #71797E; padding: 20px; text-align: left; margin-bottom: 25px; border-radius: 4px;">
+                <p style="margin: 0 0 10px 0; font-weight: bold; color: #71797E; font-size: 1.2rem;">Share Your Story or Expertise</p>
+                <p style="margin: 0; font-size: 0.9rem; line-height: 1.5; text-align: justify; color: #444;">
+                    Have you been let down by the authorities, or do you have legal insights to share? Use the form below to securely submit your experience or professional commentary.
+                </p>
+            </div>       
+        </header>
 
-    <!-- HEADER -->
-    <header style="margin-top: 60px; padding-top: 20px; ">
-	<div class="public-header">		
-		<p class="custom3">Contact Form</p>
-        <br><p class="custom4">Published as an independent commentary and public interest review revealing local authority building control negligence under primary UK law.
-				</p><br><p class="custom5">By accessing and using this website, you agree to our [Terms of Use], [Privacy Policy], and [Legal Disclaimer] (see below).</p></div><br>
-        <div id="header-box" style="background-color: #E5E4E2; border: 1px solid #808080; border-left: 5px solid #71797E; padding: 20px; text-align: left; margin-bottom: 25px; border-radius: 4px;">
-            <p style="margin: 0 0 10px 0; font-weight: bold; color: #71797E; font-size: 1.2rem;">Share Your Story or Expertise </p>
-            <p style="margin: 0; font-size: 0.9rem; line-height: 1.5; text-align: justify; color: #444;">
-                Have you been let down by the authorities, or do you have legal insights to share? Use the form below to securely submit your experience or professional commentary.
-            </p>
-        </div>       
-    </header>
-    <main>
-        
-		<form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-    <!-- REQUIRED: Your Web3Forms Access Key -->
-    <input type="hidden" name="access_key" value="90788836-3480-4860-9b85-4d23cb77fb4a">
-	
-    <input type="hidden" name="source_url" id="source_url">
-    
-    <!-- FIXED: Correct Web3Forms bot protection field name -->
-    <div class="form-group hidden-field" style="display: none;">
-        <label for="botcheck">Do not fill this out:</label>
-        <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
-    </div>
-    
-    <!-- Name Input -->
-    <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Type your name here" required>
-    </div>       
-    
-    <!-- Email Input -->
-    <div class="form-group">
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="Type your email address here" required>
-    </div>
-    
-    <!-- Message Input (Enforces 400 Characters max) -->
-    <div class="form-group">
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" maxlength="400" oninput="countCharacters()" class="contact-textarea" placeholder="Type your experience or commentary here... (max 400 characters)" required></textarea>
-    </div>
-    
-    <div id="charCount">Characters remaining: 400</div>
-    <br>
+        <!-- FORM LAYER -->
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="90788836-3480-4860-9b85-4d23cb77fb4a">	
+            <input type="hidden" name="source_url" id="source_url">
+            
+            <!-- Web3Forms Bot protection checkbox layer (Hidden from humans) -->
+            <div class="form-group hidden-field" style="display: none;">
+                <label for="botcheck">Do not fill this out:</label>
+                <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
+            </div>
+            
+            <!-- Name Input -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Type your name here" required>
+            </div>       
+            
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Type your email address here" required>
+            </div>
+            
+            <!-- Message Input -->
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" maxlength="400" oninput="countCharacters()" class="contact-textarea" placeholder="Type your experience or commentary here... (max 400 characters)" required></textarea>
+            </div>
+            
+            <div id="charCount" style="font-weight: bold; color: #555;">Characters remaining: 400</div>
+            <br>
 
-    <!-- MANDATORY UK GDPR COMPLIANCE CHECKBOXES -->
+            <!-- MANDATORY UK GDPR COMPLIANCE CHECKBOXES -->
+            <!-- Checkbox 1: Terms & Disclaimer -->
+            <div style="position: relative; padding-left: 30px; margin-bottom: 15px; max-width: 500px; width: 100%; text-align: left;">
+                <input type="checkbox" id="terms-consent" name="terms_consent" required style="position: absolute; left: 0; top: 2px; width: auto !important; height: auto !important; margin: 0; transform: scale(1.1); cursor: pointer;">
+                <label for="terms-consent" style="display: block; font-size: 0.9rem; color: #444; line-height: 1.4; cursor: pointer; text-align: left; width: 100% !important;">
+                    I agree to the <a href="terms_of_use.html" target="_blank" style="color: #0066cc; font-weight: bold; text-decoration: none;">Terms of Use</a> (including the Statutory Limitation of Liability) and the Legal Disclaimer.
+                </label>
+            </div>
 
-    <!-- Checkbox 1: Terms & Disclaimer Agreement -->
-    <div style="position: relative; padding-left: 30px; margin-bottom: 15px; max-width: 500px; width: 100%; text-align: left;">
-        <input type="checkbox" id="terms-consent" name="terms_consent" required style="position: absolute; left: 0; top: 2px; width: auto !important; height: auto !important; margin: 0; transform: scale(1.1); cursor: pointer;">
-        <label for="terms-consent" style="display: block; font-size: 0.9rem; color: #444; line-height: 1.4; cursor: pointer; text-align: left; width: 100% !important;">
-            I agree to the <a href="terms_of_use.html" target="_blank" style="color: #0066cc; font-weight: bold; text-decoration: none;">Terms of Use</a> (including the Statutory Limitation of Liability) and the Legal Disclaimer.
-        </label>
-    </div>
-
-    <!-- Checkbox 2: Privacy Policy & Data Processing Agreement -->
-    <div style="position: relative; padding-left: 30px; margin-bottom: 25px; max-width: 500px; width: 100%; text-align: left;">
-        <input type="checkbox" id="privacy-consent" name="privacy_consent" required style="position: absolute; left: 0; top: 2px; width: auto !important; height: auto !important; margin: 0; transform: scale(1.1); cursor: pointer;">
-        <label for="privacy-consent" style="display: block; font-size: 0.9rem; color: #444; line-height: 1.4; cursor: pointer; text-align: left; width: 100% !important;">
-            I explicitly consent to the minimal processing of my submitted name, email address, and message history strictly in accordance with the <a href="privacy_policy.html" target="_blank" style="color: #0066cc; font-weight: bold; text-decoration: none;">Privacy Policy</a> to allow the platform to review and reply to my inquiry.
-        </label>
-    </div>
-    
-    <button type="submit" id="submitBtn">
-        <span class="btn-text">Submit Form</span>
-        <span class="spinner" id="btnSpinner" style="display: none;"></span>
-    </button>
-</form>
+            <!-- Checkbox 2: Privacy Policy -->
+            <div style="position: relative; padding-left: 30px; margin-bottom: 25px; max-width: 500px; width: 100%; text-align: left;">
+                <input type="checkbox" id="privacy-consent" name="privacy_consent" required style="position: absolute; left: 0; top: 2px; width: auto !important; height: auto !important; margin: 0; transform: scale(1.1); cursor: pointer;">
+                <label for="privacy-consent" style="display: block; font-size: 0.9rem; color: #444; line-height: 1.4; cursor: pointer; text-align: left; width: 100% !important;">
+                    I explicitly consent to the minimal processing of my submitted name, email address, and message history strictly in accordance with the <a href="privacy_policy.html" target="_blank" style="color: #0066cc; font-weight: bold; text-decoration: none;">Privacy Policy</a> to allow the platform to review and reply to my inquiry.
+                </label>
+            </div>
+            
+            <button type="submit" id="submitBtn">
+                <span class="btn-text">Submit Form</span>
+                <span class="spinner" id="btnSpinner" style="display: none;"></span>
+            </button>
+        </form>
 
         <div id="responseMessage" style="margin-top:15px; font-weight:bold;"></div> 
     </main>
 
-    <!-- VISUALLY ANCHORED COMBINED DISCLAIMER & COMPLIANCE FOOTER -->
-    <!-- COPY FOOTER WITH LEGAL LINKS AND DISCLAIMER. -->
-        <footer>
-			<p>© <span id="current-year"></span>. All rights reserved. | Read our <a href="terms_of_use.html" target="_blank"><strong>Terms of Use</strong></a> <strong>&</strong> <a href="privacy_policy.html" target="_blank"><strong>Privacy Policy</strong></a>.</p>
-			<button id="backToTop" class="back-to-top" title="Go to top" aria-label="Back to top">↑</button>
-				<script>
-    // 1. Automated Copyright Clock
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
-    // 2. Back to Top Button Control Loop
-    const backToTopBtn = document.getElementById("backToTop");
-
-    window.onscroll = function() {
-        // Show the button once user scrolls down 400px from the top
-        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-            backToTopBtn.classList.add("visible");
-        } else {
-            backToTopBtn.classList.remove("visible");
-        }
-    };
-
-    // Smooth scroll back to coordinates 0,0 when clicked
-    backToTopBtn.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-</script><br>
-            <div class="disclaimer-box"> <div id="disclaimer-box" style="background-color: #fff9f9; border: 1px solid #d9534f; border-left: 5px solid #d9534f; padding: 20px; text-align: left; margin-bottom: 25px; border-radius: 4px;">
-            <p style="margin: 0 0 10px 0; font-weight: bold; color: #d9534f; font-size: 1.1rem;">Legal Disclaimer</p>
-            <p style="margin: 0; font-size: 0.9rem; line-height: 1.5; text-align: justify; color: #444;">
-                The content provided on this page constitutes independent historical commentary and public-interest analysis regarding the impacts of Anns v Merton and Murphy v Brentwood on the British building industry. It is compiled for informational and educational purposes to critique how judicial decisions have departed from the absolute statutory duties originally imposed by Parliament under the <strong>Public Health Act 1936 and subsequent Acts.</strong> This text does not constitute formal legal counsel, professional architectural or structural engineering services, or actionable financial guidance. Reading or interacting with this text does not establish a professional-client relationship.<br><br><strong>Statutory Limitation of Liability:</strong> To the maximum extent permitted by UK law, and strictly as mandated under Section 2(1) of the <strong>Unfair Contract Terms Act 1977</strong> (which prohibits the exclusion of liability for death or personal injury resulting from negligence), neither the author nor the website owner shall be held liable for any financial loss, property damage, administrative penalties, or personal distress resulting from the use of, or reliance upon, this information. The author maintains that while primary UK statutes impose absolute, non-negotiable duties upon public authorities, the separate statutory framework governing private publications requires this specific legal formulation to prevent vexatious censorship by local authorities. This website and its contents are governed by and construed in accordance with the laws of England and Wales.
+    <!-- COMPLIANCE FOOTER LAYOUT -->
+    <footer>
+        <p>© <span id="current-year"></span>. All rights reserved. | Read our <a href="terms_of_use.html" target="_blank"><strong>Terms of Use</strong></a> <strong>&</strong> <a href="privacy_policy.html" target="_blank"><strong>Privacy Policy</strong></a>.</p>
+        <button id="backToTop" class="back-to-top" title="Go to top" aria-label="Back to top">↑</button>
+        <br>
+        <div class="disclaimer-box"> 
+            <div id="disclaimer-box" style="background-color: #fff9f9; border: 1px solid #d9534f; border-left: 5px solid #d9534f; padding: 20px; text-align: left; margin-bottom: 25px; border-radius: 4px;">
+                <p style="margin: 0 0 10px 0; font-weight: bold; color: #d9534f; font-size: 1.1rem;">Legal Disclaimer</p>
+                <p style="margin: 0; font-size: 0.9rem; line-height: 1.5; text-align: justify; color: #444;">
+                The content provided on this page constitutes independent historical commentary and public-interest analysis regarding the impacts of Anns v Merton and Murphy v Brentwood on the British building industry. It is compiled for informational and educational purposes to critique how judicial decisions have departed from the absolute statutory duties originally imposed by Parliament under the <strong>Public Health Act 1936 and subsequent Acts.</strong> This text does not constitute formal legal counsel, professional architectural or structural engineering services, or actionable financial guidance. Reading or interacting with this text does not establish a professional-client relationship.<br><br><strong>Statutory Limitation of Liability:</strong> To the maximum extent permitted by UK law, and strictly as mandated under Section 2(1) of the <strong>Unfair Contract Terms Act 1977</strong> (which prohibits the exclusion of liability for death or personal injury resulting from negligence), neither the author nor the website owner shall be held liable for any financial loss, property damage, administrative penalties, or personal distress resulting from the use of, or reliance upon, this information. The author maintains that while primary UK statutes impose absolute, non-negotiable duties upon public authorities, the separate statutory framework governing private publications requires this specific legal formulation to prevent vexatious censorship by local authorities. This website and its contents are governed by and construed in accordance with the laws of England and Wales.</p>
             </div>
         </footer>
 		</div>
 		<!-- COPY TO HERE. -->
 
-<!-- SCRIPTS LOADED CLEANLY BEFORE BODY CLOSURE -->
+<!-- SINGLE CONSOLIDATED CONTROLLER SCRIPT BLOCK -->
 <script>
+    // Link form variables safely
     const form = document.getElementById('contactForm');
     const emailInput = document.getElementById('email');
     const messageInput = document.getElementById('message');
@@ -208,27 +181,45 @@
     const spinner = document.getElementById('btnSpinner');
     const backToTopBtn = document.getElementById("backToTop");
 
+    // Unified Character Counter Engine
     function countCharacters() {
         const textArea = document.getElementById('message');
         const counter = document.getElementById('charCount');
-        counter.textContent = "Characters remaining: " + (400 - textArea.value.length);
+        if (textArea && counter) {
+            counter.textContent = "Characters remaining: " + (400 - textArea.value.length);
+        }
     }
 
-    // Initialize layout scripts cleanly
-    window.onload = function() {
+    // Explicitly link the counter to the key triggers manually
+    if (messageInput) {
+        messageInput.addEventListener('input', countCharacters);
+    }
+
+    // Set up everything safely only after the HTML fully unpacks
+    window.addEventListener('DOMContentLoaded', (event) => {
+        // Initialize character counter view
         countCharacters();
         
-        // Automatically fill the hidden field with the current page URL
-        document.getElementById('source_url').value = window.location.href;
+        // Populate current destination URL tracking
+        const sourceUrlInput = document.getElementById('source_url');
+        if (sourceUrlInput) {
+            sourceUrlInput.value = window.location.href;
+        }
         
-        // Automated Copyright Clock setup
+        // Populate the copyright calendar year stamp
         const yearSpan = document.getElementById('current-year');
         if(yearSpan) {
             yearSpan.textContent = new Date().getFullYear();
         }
-    };
+    });
 
-    // Helper function to read the external badwords.txt file
+    // Email checker expression
+    function isValidEmail(email) {
+        const emailRegex = /^[a-zA-Z0-9](?:[a-zA-Z0-9._%+-]*[a-zA-Z0-9])?@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[A-Za-z]{2,}$/;
+        return emailRegex.test(email.trim());
+    }
+
+    // Profanity dictionary reader loop
     async function fetchBadWords() {
         try {
             const response = await fetch('./badwords.txt');
@@ -236,112 +227,126 @@
             const text = await response.text();
             return text.split(/\r?\n/).map(word => word.trim().toLowerCase()).filter(word => word.length > 0);
         } catch (e) {
-            console.error("Could not load badwords.txt", e);
+            console.error("Profanity database file not found yet.", e);
             return [];
         }
     }
 
-    // Helper function to test regex-based email validity
-    function isValidEmail(email) {
-        const emailRegex = /^[a-zA-Z0-9](?:[a-zA-Z0-9._%+-]*[a-zA-Z0-9])?@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[A-Za-z]{2,}$/;
-        return emailRegex.test(email.trim());
+    // Primary Submission Event Guard Loop
+    if (form) {
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault(); 
+            
+            // Clear message strings
+            if (responseMessage) responseMessage.textContent = "";
+            if (emailInput) emailInput.classList.remove('error-border');
+            if (messageInput) messageInput.classList.remove('error-border');
+
+            // 1. Web3Forms Anti-Bot Verification
+            const botcheck = document.getElementById('botcheck');
+            if (botcheck && botcheck.checked) {
+                if (responseMessage) {
+                    responseMessage.style.color = 'green';
+                    responseMessage.textContent = 'Message sent successfully!';
+                }
+                form.reset();
+                countCharacters();
+                return; 
+            }
+
+            // 2. Strict Email Formatting Check
+            if (emailInput && !isValidEmail(emailInput.value)) {
+                emailInput.classList.add('error-border');
+                if (responseMessage) {
+                    responseMessage.style.color = 'red';
+                    responseMessage.textContent = 'Please enter a valid email address structure (e.g., user@example.com).';
+                }
+                return;
+            }
+
+            // 3. Phrase Filter Check
+            const badWordsList = await fetchBadWords();
+            const combinedInputText = `${nameInput ? nameInput.value : ''} ${emailInput ? emailInput.value : ''} ${messageInput ? messageInput.value : ''}`.toLowerCase();
+            
+            const containsProfanity = badWordsList.some(badWord => {
+                const regex = new RegExp(`\\b${badWord}\\b`, 'i');
+                return regex.test(combinedInputText);
+            });
+
+            if (containsProfanity && messageInput) {
+                messageInput.classList.add('error-border');
+                if (responseMessage) {
+                    responseMessage.style.color = 'red';
+                    responseMessage.textContent = 'Your message contains language that is not permitted.';
+                }
+                return;
+            }
+
+            // --- ALL TESTS PASSED: Send Form to Web3Forms ---
+            if (btn) btn.disabled = true;
+            const btnTextNode = btn ? btn.querySelector('.btn-text') : null;
+            if (btnTextNode) btnTextNode.innerText = "Sending...";
+            if (spinner) spinner.style.display = "inline-block";
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    if (responseMessage) {
+                        responseMessage.style.color = 'green';
+                        responseMessage.textContent = 'Message sent successfully!';
+                    }
+                    form.reset();
+                    countCharacters(); 
+                } else {
+                    if (responseMessage) {
+                        responseMessage.style.color = 'red';
+                        responseMessage.textContent = result.message || 'Submission failed.';
+                    }
+                }
+            } catch (error) {
+                if (responseMessage) {
+                    responseMessage.style.color = 'red';
+                    responseMessage.textContent = 'Error connecting to the mail server.';
+                }
+            } finally {
+                if (btn) btn.disabled = false;
+                if (btnTextNode) btnTextNode.innerText = "Submit Form";
+                if (spinner) spinner.style.display = "none";
+            }
+        });
     }
 
-    // Single Form Submission Controller Loop
-    form.addEventListener('submit', async function(e) {
-        e.preventDefault(); 
-        
-        // Reset UI states
-        responseMessage.textContent = "";
-        emailInput.classList.remove('error-border');
-        messageInput.classList.remove('error-border');
-
-        // 1. Honeypot check (Bot Filter)
-        const honeypot = document.getElementById('honeypot').value;
-        if (honeypot !== "") {
-            responseMessage.style.color = 'green';
-            responseMessage.textContent = 'Message sent successfully!';
-            form.reset();
-            return; 
-        }
-
-        // 2. Email validation check
-        if (!isValidEmail(emailInput.value)) {
-            emailInput.classList.add('error-border');
-            responseMessage.style.color = 'red';
-            responseMessage.textContent = 'Please enter a valid email address structure (e.g., user@example.com).';
-            return;
-        }
-
-        // 3. Profanity filtering check
-        const badWordsList = await fetchBadWords();
-        const combinedInputText = `${nameInput.value} ${emailInput.value} ${messageInput.value}`.toLowerCase();
-        
-        const containsProfanity = badWordsList.some(badWord => {
-            const regex = new RegExp(`\\b${badWord}\\b`, 'i');
-            return regex.test(combinedInputText);
-        });
-
-        if (containsProfanity) {
-            messageInput.classList.add('error-border');
-            responseMessage.style.color = 'red';
-            responseMessage.textContent = 'Your message contains language that is not permitted.';
-            return;
-        }
-
-        // --- VALIDATION PASSED: Activate Loading UI Elements ---
-        btn.disabled = true;
-        btn.querySelector('.btn-text').innerText = "Sending...";
-        spinner.style.display = "inline-block";
-
-        // 4. Send clean, validated data to Web3Forms API
-        const formData = new FormData(form);
-        formData.delete('honeypot'); // Clean up payload
-
-        try {
-            const response = await fetch(form.action, {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            });
-            
-            const result = await response.json();
-            
-            if (result.success) {
-                responseMessage.style.color = 'green';
-                responseMessage.textContent = 'Message sent successfully!';
-                form.reset();
-                countCharacters(); // Reset character counter UI text
+    // Scroll Monitoring Engine
+    window.addEventListener('scroll', function() {
+        if (backToTopBtn) {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                backToTopBtn.classList.add("visible");
             } else {
-                responseMessage.style.color = 'red';
-                responseMessage.textContent = result.message || 'Submission failed.';
+                backToTopBtn.classList.remove("visible");
             }
-        } catch (error) {
-            responseMessage.style.color = 'red';
-            responseMessage.textContent = 'Error connecting to the mail server.';
-        } finally {
-            // Re-enable UI elements regardless of success or error state
-            btn.disabled = false;
-            btn.querySelector('.btn-text').innerText = "Submit Form";
-            spinner.style.display = "none";
         }
     });
 
-    // Back to Top Button Control Loop
-    window.onscroll = function() {
-        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-            backToTopBtn.classList.add("visible");
-        } else {
-            backToTopBtn.classList.remove("visible");
-        }
-    };
-
-    backToTopBtn.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
-    });
+    }
 </script>
+
 </body>
 </html>
+
+
