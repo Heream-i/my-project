@@ -344,6 +344,37 @@
             });
         });
     }
+	
+	    // MOBILE TOUCH DRIVER FOR DROPDOWN MENUS
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        const button = dropdown.querySelector('.dropbtn');
+        
+        if (button) {
+            button.addEventListener('click', function(e) {
+                // If on mobile/touch, intercept the click to toggle cleanly
+                if (window.innerWidth <= 620) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    // Close any other open dropdown first
+                    dropdowns.forEach(other => {
+                        if (other !== dropdown) other.classList.remove('active');
+                    });
+                    
+                    // Toggle the current dropdown menu layer
+                    dropdown.classList.toggle('active');
+                }
+            });
+        }
+    });
+
+    // Close dropdowns if the user taps anywhere else on the screen
+    document.addEventListener('click', function() {
+        dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+    });
+
 </script>
 
 </body>
