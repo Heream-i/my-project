@@ -84,7 +84,11 @@ body {
   cursor: pointer;
   height: 50px;       
   line-height: 50px;  
-  font-weight: bold; /* This makes Home, Contact, and all main buttons bold */
+   /*font-weight: bold; This makes Home, Contact, and all main buttons bold */
+    /* FIXED: Cross-platform explicit font weights for iOS Safari */
+  font-weight: 700 !important; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Background hover color for right-side items */
@@ -169,3 +173,21 @@ body {
 .dropdown.active .dropdown-content {
   display: block;
 }
+/* MD ADDED BELOW
+
+  /* Prevents elements from sticking hard to the glass edge of the phone */
+  .nav-links {
+    padding-right: 4px;
+  }
+
+  /* Force the first dropdown drawer to align left, so it doesn't collide with the second one */
+  .dropdown:not(.menu-right) .dropdown-content {
+    left: 0 !important;
+    right: auto !important;
+  }
+
+  /* Force the absolute outermost right dropdown to stick flush with the browser container */
+  .dropdown.menu-right .dropdown-content {
+    right: 0 !important;
+    left: auto !important;
+  }
