@@ -84,7 +84,7 @@ body {
   cursor: pointer;
   height: 50px;       
   line-height: 50px;  
-   /*font-weight: bold; This makes Home, Contact, and all main buttons bold */
+
     /* FIXED: Cross-platform explicit font weights for iOS Safari */
   font-weight: 700 !important; 
   -webkit-font-smoothing: antialiased;
@@ -163,14 +163,6 @@ body {
     font-size: 12px !important; /* Decreases text scale slightly for narrow screens */
     font-weight: 700 !important; /* Forces iPhone Safari engine to compute explicit weight values */
   }
-
-
-  /* Tighten spacing between the interactive link items 
-  .nav-links a, 
-  .dropdown .dropbtn {
-    padding: 0 6px;
-    font-size: 13px;
-  } */
 
   /* Increase dropdown menu width slightly on mobile so long text fits */
   .dropdown-content {
