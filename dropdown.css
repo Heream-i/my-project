@@ -156,13 +156,21 @@ body {
   .logo-image {
     height: 30px;
   }
+	  /* Tighten spacing and force bold weights inside the mobile media query loop */
+  .nav-links a, 
+  .dropdown .dropbtn {
+    padding: 0 4px !important; /* Reduces horizontal link padding to prevent overflow lines */
+    font-size: 12px !important; /* Decreases text scale slightly for narrow screens */
+    font-weight: 700 !important; /* Forces iPhone Safari engine to compute explicit weight values */
+  }
 
-  /* Tighten spacing between the interactive link items */
+
+  /* Tighten spacing between the interactive link items 
   .nav-links a, 
   .dropdown .dropbtn {
     padding: 0 6px;
     font-size: 13px;
-  }
+  } */
 
   /* Increase dropdown menu width slightly on mobile so long text fits */
   .dropdown-content {
