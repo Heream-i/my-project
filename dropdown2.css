@@ -86,13 +86,12 @@ body {
   line-height: 50px;  
 }
 
-/* FIXED: Target the text elements directly to force bold weights across iOS Safari */
+/* FORCE BOLD: Top-level links (Home, Contact) and the main menu buttons */
 .nav-links > a, 
 .dropdown .dropbtn {
-  font-weight: 900 !important; /* Maximized numeric weight for crisp rendering */
+  font-weight: 900 !important; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
 
 /* Background hover color for right-side items */
@@ -128,7 +127,10 @@ body {
   text-align: left;
   height: auto;
   line-height: normal; /* Resets the navbar vertical centering */
-  font-weight: normal !important; /* Keeps interior drawer text clean */
+  
+  /* FIXED: Forces the actual text lines inside the dropdown menus to look bold too */
+  font-weight: 700 !important; 
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Hover style inside the dropdown menu */
@@ -148,9 +150,9 @@ body {
 }
 
 /* ==========================================================================
-   MOBILE RESPONSIVE PATCH FOR IPHONE AND SMALL SCREENS
+   MOBILE RESPONSIVE PATCH FOR IPHONE AND SMALL SCREENS (UPDATED MAX-WIDTH)
    ========================================================================== */
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 930px) {
   /* Reduce navbar container padding */
   .navbar {
     padding: 0 8px;
@@ -167,17 +169,24 @@ body {
     height: 30px;
   }
   
-  /* Tighten spacing and force bold weights inside the mobile loop */
+  /* Tighten link layout items for mobile landscape row stability */
   .nav-links > a, 
   .dropdown .dropbtn {
-    padding: 0 5px !important; /* Reduces link margins to prevent line drops */
-    font-size: 12px !important; /* Balances type scale for narrow screens */
-    font-weight: 900 !important; /* Direct override force for iOS render system */
+    padding: 0 5px !important; 
+    font-size: 12px !important; 
+    font-weight: 900 !important; 
   }
 
-  /* Increase dropdown menu width slightly on mobile so long text fits */
+  /* Dropdown panel width modifications */
   .dropdown-content {
     min-width: 175px;
+  }
+
+  /* Direct layout styling rules for actual inner dropdown link text weight properties */
+  .dropdown-content a {
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    padding: 10px 12px !important;
   }
 
   /* Prevents elements from sticking hard to the glass edge of the phone */
