@@ -5,63 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
 	
-	<title>Public Information Notice: Statutory Exclusion under Building Legislation</title>
-
+	<title>What Are the British Public Paying Taxes For? | The Building Control Illusion of Justice</title>
+	
 	<link rel="stylesheet" type="text/css" href="root.css">
 	<link rel="stylesheet" type="text/css" href="public.css">
-	<link rel="stylesheet" type="text/css" href="dropdown.css">
+	<link rel="stylesheet" type="text/css" href="dropdown.css">	
 	<link rel="stylesheet" type="text/css" href="back_to_top.css">
-	<link rel="stylesheet" type="text/css" href="footer.css">
 	<link rel="stylesheet" type="text/css" href="font.css">
 	<style>
 	 .thesis-box { background-color: #f9f9f9; border-left: 4px solid #d9534f; padding: 15px; margin: 20px 0; font-style: italic; }
 	</style>
+	
 </head>
 <body>
-<div class="main-container">
-    <!-- START OF NAVBAR CODE -->
-	<!-- START OF OPTIMIZED NAVBAR CODE -->
+<!-- START OF NAVBAR CODE -->
 <nav class="navbar">
     <!-- Left Side: Text and Image Logo -->
-    <div class="nav-logo">
-        <a href="index.html">
-            <span class="logo-text">For The People</span>
-            <img src="scales.PNG" alt="Website Logo" class="logo-image">
-        </a>
+  <div class="nav-logo">
+    <a href="#">
+      <span class="logo-text">For The People</span>
+      <img src="scales.PNG" alt="Website Logo" class="logo-image">
+    </a>
+  </div>
+
+  <!-- Right Side: Navigation Links & Dropdown -->
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+	<a href="form.html" target="_blank">Contact</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Coming Soon ▼</button>
+    <div class="dropdown-content">
+      <a href="taxed.html" target="_self">Paying Taxes</a>
+      <a href="bcd_appeal.html" target="_blank">BCD Right of Appeal</a>
+      <a href="index.html">Category 3</a>
+      <a href="index.html">Category 4</a>
     </div>
-
-    <!-- Right Side: Navigation Links & Dropdowns -->
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="form.html" target="_self">Contact</a>
-
-        <!-- First Dropdown Menu Container -->
-        <div class="dropdown">
-            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Coming Soon ▼</button>
-            <div class="dropdown-content">
-                <a href="taxed.html" target="_blank">Paying Taxes</a>
-                <a href="bcd_appeal.html" target="_blank">BCD Right of Appeal</a>
-                <a href="category3.html">Category 3</a>
-                <a href="category4.html">Category 4</a>
-            </div>
-        </div>
-
-        <!-- Second/Edge Dropdown Menu Container (Added special class for edge protection) -->
-        <div class="dropdown menu-right">
-            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Coming Soon ▼</button>
-            <div class="dropdown-content">
-                <a href="category1.html">Category 1</a>
-                <a href="category2.html">Category 2</a>
-                <a href="category3.html">Category 3</a>
-                <a href="category4.html">Category 4</a>
-            </div>
-        </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Coming Soon ▼</button>
+    <div class="dropdown-content">
+      <a href="index.html">Category 1</a>
+      <a href="index.html">Category 2</a>
+      <a href="index.html">Category 3</a>
+      <a href="index.html">Category 4</a>
     </div>
+  </div>
+</div>
 </nav>
-<!-- END OF OPTIMIZED NAVBAR CODE -->
 
-	<!-- END  OF NAVBAR CODE -->
-	
+<!-- Main content container to prevent text from being hidden behind the navbar -->
+<main class="content">
+ 
+<!-- END OF NAVBAR CODE -->
+    
+    <style>
+       
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            margin: 0 0 1rem 0;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        } 
+
+        header p {
+            font-size: 1.25rem;
+            margin: 0;
+            color: #e0e1dd;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }    
+
+        h2 {
+            color: var(--secondary);
+            font-size: 1.65rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            margin: 2rem 0;
+            padding-left: 1rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .timeline-item {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+
+        /* Punchy Lists */
+        ul.punchy-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.punchy-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        ul.punchy-list li::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.3rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        /* Table Styles */
+        .table-container {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--white);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 6px;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+    </style>
+</head>
+<body>
+
     <div class="document-container">
         <div class="public-header">
 		        <h2>Professional Preface &amp; Context</h2>
@@ -72,8 +181,7 @@
             <p style="margin-top: 0; font-weight: bold; color: var(--primary-color); text-transform: uppercase; letter-spacing: 0.5px;">Statement from an Industry Veteran</p>
             <p>This public notice is compiled and authored by a British building industry veteran with over 50 years of direct, hands-on experience within the sector. Having commenced a career as a practical bricklayer, the author advanced to spend 25 years executing professional architectural drawings and complex structural calculations. This document is informed by half a century of navigating local authority building control systems from the ground up.</p>
             <p>Having personally witnessed the devastating real-world impact of un-auditable administrative decisions—including instances where local authority overreach has led to severe financial ruin and homelessness—the author has dedicated decades to researching the primary legislation that permits these injustices. This text serves as an expert witness statement to the British public, stripping away bureaucratic jargon to expose how primary UK law intentionally strips citizens and builders of their right to hold council decision-makers accountable.</p>
-        </div>
-
+        </div>					
             <div class="public-badge">Public Information Notice</div>
             <h1>The Statutory Exclusion of British Citizens Under UK Building Control Legislation</h1>
             <p class="public-subtitle">An Objective Examination of Regulatory Asymmetry and Administrative Accountability</p>
@@ -139,7 +247,6 @@
 
         <div class="footer">
             Document Reference: BA1984-PHA1936/EXCLUSION-NOTICE<br>
-            Formally Rendered for Public Information and Open Review
         </div>
     
 	        <h2>3.0 Open Letter to All Members of Parliament</h2>
@@ -159,9 +266,10 @@
             
             <p style="font-weight: bold; font-family: Arial, sans-serif; color: var(--primary-color); margin-bottom: 0;">We call upon Parliament to amend primary building legislation to provide ordinary British citizens with a direct, cost-free statutory right to independent audit and administrative appeal when a local authority fails to execute its public law duties lawfully.</p>
         </div>
-		         <!-- COPY FOOTER WITH LEGAL LINKS AND DISCLAIMER. -->
+
+	<!-- COPY FOOTER WITH LEGAL LINKS AND DISCLAIMER. -->
         <footer>
-			<p>© <span id="current-year"></span>. All rights reserved. | Read our <a href="terms_of_use.html" target="_blank"><strong>Terms of Use & </strong></a>  <a href="privacy_policy.html" target="_blank"><strong>Privacy Policy.</strong></a></p>
+			<p>© <span id="current-year"></span>. All rights reserved. By accessing and using this website, you agree to our  <a href="terms_of_use.html" target="_blank"><strong>Terms of Use &</strong></a>  <a href="privacy_policy.html" target="_blank"><strong>Privacy Policy</strong></a>.</p>
 			<button id="backToTop" class="back-to-top" title="Go to top" aria-label="Back to top">↑</button>
 				<script>
     // 1. Automated Copyright Clock
@@ -186,41 +294,11 @@
             behavior: "smooth"
         });
     });
-	    // MOBILE TOUCH DRIVER FOR DROPDOWN MENUS
-    const dropdowns = document.querySelectorAll('.dropdown');
-
-    dropdowns.forEach(dropdown => {
-        const button = dropdown.querySelector('.dropbtn');
-        
-        if (button) {
-            button.addEventListener('click', function(e) {
-                // If on mobile/touch, intercept the click to toggle cleanly
-                if (window.innerWidth <= 620) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    
-                    // Close any other open dropdown first
-                    dropdowns.forEach(other => {
-                        if (other !== dropdown) other.classList.remove('active');
-                    });
-                    
-                    // Toggle the current dropdown menu layer
-                    dropdown.classList.toggle('active');
-                }
-            });
-        }
-    });
-
-    // Close dropdowns if the user taps anywhere else on the screen
-    document.addEventListener('click', function() {
-        dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
-    });
-
 </script><br>
             <div class="disclaimer-box"> <div id="disclaimer-box" style="background-color: #fff9f9; border: 1px solid #d9534f; border-left: 5px solid #d9534f; padding: 20px; text-align: left; margin-bottom: 25px; border-radius: 4px;">
             <p style="margin: 0 0 10px 0; font-weight: bold; color: #d9534f; font-size: 1.1rem;">Legal Disclaimer</p>
             <p style="margin: 0; font-size: 0.9rem; line-height: 1.5; text-align: justify; color: #444;">
-                The content provided on this page constitutes independent historical commentary and public-interest analysis regarding the impacts of Anns v Merton and Murphy v Brentwood on the British building industry. It is compiled for informational and educational purposes to critique how judicial decisions have departed from the absolute statutory duties originally imposed by Parliament under the <strong>Public Health Act 1936 and subsequent Acts.</strong> This text does not constitute formal legal counsel, professional architectural or structural engineering services, or actionable financial guidance. Reading or interacting with this text does not establish a professional-client relationship.<br><br><strong>Statutory Limitation of Liability:</strong> To the maximum extent permitted by UK law, and strictly as mandated under Section 2(1) of the <strong>Unfair Contract Terms Act 1977</strong> (which prohibits the exclusion of liability for death or personal injury resulting from negligence), neither the author nor the website owner shall be held liable for any financial loss, property damage, administrative penalties, or personal distress resulting from the use of, or reliance upon, this information. The author maintains that while primary UK statutes impose absolute, non-negotiable duties upon public authorities, the separate statutory framework governing private publications requires this specific legal formulation to prevent vexatious censorship by local authorities. This website and its contents are governed by and construed in accordance with the laws of England and Wales.
+			The content provided on this page constitutes independent historical commentary and public-interest analysis regarding the impacts of Anns v Merton and Murphy v Brentwood on the British building industry. It is compiled for informational and educational purposes to critique how judicial decisions have departed from the absolute statutory duties originally imposed by Parliament under the <strong>Public Health Act 1936 and subsequent Acts.</strong> This text does not constitute formal legal counsel, professional architectural or structural engineering services, or actionable financial guidance. Reading or interacting with this text does not establish a professional-client relationship.<br><br><strong>Statutory Limitation of Liability:</strong> To the maximum extent permitted by UK law, and strictly as mandated under Section 2(1) of the <strong>Unfair Contract Terms Act 1977</strong> (which prohibits the exclusion of liability for death or personal injury resulting from negligence), neither the author nor the website owner shall be held liable for any financial loss, property damage, administrative penalties, or personal distress resulting from the use of, or reliance upon, this information. The author maintains that while primary UK statutes impose absolute, non-negotiable duties upon public authorities, the separate statutory framework governing private publications requires this specific legal formulation to prevent vexatious censorship by local authorities. This website and its contents are governed by and construed in accordance with the laws of England and Wales.
             </div>
         </footer>
 		</div>
