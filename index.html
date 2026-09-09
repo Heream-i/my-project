@@ -5,20 +5,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="favicon-32x32.png">
 	
-	<title>Public Information Notice: Statutory Exclusion under Building Legislation</title>
+	<title>The Subversion of Public Safety: An Independent Public Interest Review</title>
 	
 	<link rel="stylesheet" type="text/css" href="root.css">
 	<link rel="stylesheet" type="text/css" href="public.css">
 	<link rel="stylesheet" type="text/css" href="dropdown.css">	
 	<link rel="stylesheet" type="text/css" href="back_to_top.css">
 	<link rel="stylesheet" type="text/css" href="font.css">
-	<style>
-	 .thesis-box { background-color: #f9f9f9; border-left: 4px solid #d9534f; padding: 15px; margin: 20px 0; font-style: italic; }
-	</style>
 	
+	<style>
+        :root {
+            --primary-color: #1a2b4c;
+            --accent-color: #c92a2a;
+            --text-color: #2b2b2b;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --timeline-line: #cbd5e1;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        header {
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .lead-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            line-height: 1.5;
+            background-color: #eef2f7;
+            padding: 20px;
+            border-left: 5px solid var(--accent-color);
+            border-radius: 4px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.6rem;
+            margin-top: 50px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .legal-case {
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* Chronology Timeline Styles */
+        .timeline {
+            position: relative;
+            margin: 40px 0;
+            padding-left: 30px;
+            border-left: 4px solid var(--timeline-line);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -39px;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            border: 4px solid var(--bg-color);
+        }
+
+        .timeline-date {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 0 0 5px 0;
+        }
+
+        .timeline-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+        }
+
+        .timeline-link {
+            display: inline-block;
+            margin-top: 8px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-bottom: 2px dashed var(--accent-color);
+            transition: color 0.2s ease;
+        }
+
+        .timeline-link:hover {
+            color: var(--accent-color);
+        }
+
+        /* Content Sections */
+        .content-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            scroll-margin-top: 20px;
+        }
+
+        /* Floating Button Styles */
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 130px;		/* CHANGE THIS to 130 */
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 2px solid transparent;
+        }
+
+        .floating-btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        }
+
+        .floating-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<!-- START OF NAVBAR CODE -->
+	<!-- START OF NAVBAR CODE -->
 <nav class="navbar">
     <!-- Left Side: Text and Image Logo -->
   <div class="nav-logo">
@@ -36,9 +218,10 @@
   <div class="dropdown">
     <button class="dropbtn">Coming Soon ▼</button>
     <div class="dropdown-content">
+      <a href="statement.html" target="_blank">Veteran Statement</a>		
       <a href="taxed.html" target="_blank">Paying Taxes</a>
       <a href="bcd_appeal.html" target="_blank">BCD Right of Appeal</a>
-      <a href="legal_asymmetry.html"  target="blank"">Legal Asymmetry</a>
+      <a href="legal_asymmetry.html"  target="blank">Legal Asymmetry</a>
       <a href="index.html">Category 4</a>
     </div>
   </div>
@@ -58,216 +241,121 @@
 <main class="content">
  
 <!-- END OF NAVBAR CODE -->
-    
-    <style>
-       
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background-color: var(--light-bg);
-            margin: 0;
-            padding: 0;
-        }
 
-        header h1 {
-            font-size: 1.5rem;
-            margin: 0 0 1rem 0;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-        } 
+    <!-- Floating Back to Chronology Button -->
+    <a href="#chronology" class="floating-btn" id="chronoBtn" title="Back to Chronology">
+        <svg viewBox="0 0 24 24">
+            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+        </svg>
+        Chronology
+    </a>
 
-        header p {
-            font-size: 1.25rem;
-            margin: 0;
-            color: #e0e1dd;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-        }    
-
-        h2 {
-            color: var(--secondary);
-            font-size: 1.65rem;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 0.5rem;
-            margin-top: 2rem;
-        }
-
-        /* Timeline Styles */
-        .timeline {
-            margin: 2rem 0;
-            padding-left: 1rem;
-            border-left: 4px solid var(--primary);
-        }
-
-        .timeline-item {
-            margin-bottom: 1.5rem;
-            position: relative;
-        }
-
-        .timeline-date {
-            font-weight: bold;
-            color: var(--accent);
-            font-size: 1.1rem;
-        }
-
-        /* Punchy Lists */
-        ul.punchy-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul.punchy-list li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.75rem;
-        }
-
-        ul.punchy-list li::before {
-            content: "•";
-            color: var(--accent);
-            font-weight: bold;
-            font-size: 1.3rem;
-            position: absolute;
-            left: 0;
-            top: -2px;
-        }
-
-        /* Table Styles */
-        .table-container {
-            overflow-x: auto;
-            margin: 2rem 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: var(--white);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-radius: 6px;
-        }
-
-        th, td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        th {
-            background-color: var(--primary);
-            color: var(--white);
-        }
-
-        tr:nth-child(even) {
-            background-color: #f1f5f9;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="document-container">
-        <div class="public-header">
-		        <h2>Professional Preface &amp; Context</h2>
-				<p class="custom4">Published as an independent commentary and public interest review revealing local authority building control negligence under primary UK law.
-				</p><br><p class="custom5">By accessing and using this website, you agree to our <a href="terms_of_use.html" target="_blank">Terms of Use</a>, <a href="privacy_policy.html" target="_blank">Privacy Policy</a>, and Legal Disclaimer (see below).</p><br>
-				
-        <div style="background-color: #f7fafc; border-left: 4px solid var(--primary-color); padding: 25px; margin-bottom: 35px; font-family: Arial, sans-serif; font-size: 15px; line-height: 1.6; text-align: justify;">
-            <p style="margin-top: 0; font-weight: bold; color: var(--primary-color); text-transform: uppercase; letter-spacing: 0.5px;">Statement from an Industry Veteran</p>
-            <p>This public notice is compiled and authored by a British building industry veteran with over 50 years of direct, hands-on experience within the sector. Having commenced a career as a practical bricklayer, the author advanced to spend 25 years executing professional architectural drawings and complex structural calculations. This document is informed by half a century of navigating local authority building control systems from the ground up.</p>
-            <p>Having personally witnessed the devastating real-world impact of un-auditable administrative decisions—including instances where local authority overreach has led to severe financial ruin and homelessness—the author has dedicated decades to researching the primary legislation that permits these injustices. This text serves as an expert witness statement to the British public, stripping away bureaucratic jargon to expose how primary UK law intentionally strips citizens and builders of their right to hold council decision-makers accountable.</p>
-        </div>					
-            <div class="public-badge">Public Information Notice</div>
-            <h1>The Statutory Exclusion of British Citizens Under UK Building Control Legislation</h1>
-            <p class="public-subtitle">An Objective Examination of Regulatory Asymmetry and Administrative Accountability</p>
-        </div>
-		<div class="thesis-box">
-                <p>
-                    <strong>The Core Constitutional Paradox:</strong> If a statute is enacted explicitly for the "benefit" of the citizen, it logically dictates that those tasked with executing that statute must be legally bound to uphold it. To possess the benefit of the law means that those in authority <strong>must care</strong>. Accountability cannot exist in a vacuum.
-                </p>
-            </div>
-        <h2>1.0 Formal Statutory Baseline</h2>
-
-        <div class="clause-block">
-            <span class="clause-number">[1.1]</span>
-            <span class="clause-text">Pursuant to <a href="https://legislation.gov.uk" target="_blank">Section 16(1) of the Building Act 1984</a>, a local authority holds a strict and non-delegable statutory duty to approve deposited building regulation plans that comply with relevant regulatory requirements. Conversely, under <a href="https://legislation.gov.uk" target="_blank">Section 16(2)</a>, where an application fails to demonstrate compliance, the authority is empowered to either reject the plans or, subject strictly to the applicant's written consent, pass them subject to specific conditions.</span>
-        </div>
-
-        <div class="clause-block">
-            <span class="clause-number">[1.2]</span>
-            <span class="clause-text">The statutory framework explicitly places the entire burden and legal accountability for evaluating, passing, or rejecting plans exclusively upon the local authority. No provision within the primary legislation transfers any legal duty, requirement, or responsibility onto the builder or the applicant to audit, police, or check the authority's decisions for administrative errors. The evaluation process remains a strictly non-delegable public function of the council.</span>
-        </div>
-
-        <div class="clause-block">
-            <span class="clause-number">[1.3]</span>
-            <span class="clause-text">Concurrently, primary legislation provides absolutely no statutory mechanism, right, or avenue for British citizens, neighbouring property owners, or other external third parties to directly audit, review, or override a determination made by a local authority building control department. Outside of generalized, prohibitively expensive, and high-threshold public law remedies (such as Judicial Review), external citizens are entirely precluded from intervening in or overturning these administrative decisions.</span>
-        </div>
-
-        <div class="clause-block">
-            <span class="clause-number">[1.4]</span>
-            <span class="clause-text">For historical and legislative clarity, neither the <a href="https://legislation.gov.uk" target="_blank">Public Health Act 1936</a>—from which modern building control duties originate—nor any subsequent amending statutes over the following century have ever imposed an auditing or policing duty on the builder, nor have they ever created a mechanism enabling third-party citizens to directly audit or override local authority determinations. The absolute separation of administrative accountability from third-party citizen oversight has remained unbroken throughout the history of UK building control legislation.</span>
-        </div>
-        
-        <div class="clause-block">
-            <span class="clause-number">[1.5]</span>
-            <span class="clause-text">Consequently, these statutory limitations create a severe regulatory asymmetry. While a local authority retains sole legal responsibility for its determinations, ordinary British citizens are left entirely powerless within the primary legislation to protect their interests, challenge administrative failures, or hold building control departments directly accountable for errors that impact the wider public.</span>
-        </div>
-        <h2>2.0 Understanding the Systemic Gaps (FAQ)</h2>
-
-        <div class="faq-block">
-            <p class="faq-question">The Legal Limits of Challenging Council Vetoes</p>
-            <p class="faq-answer">Primary UK legislation dictates a strict boundary when a local authority rejects plans or enforces arbitrary conditions. Under the Building Act 1984, the statutory right to lodge an administrative appeal belongs solely to the original applicant. External third parties, neighbours, and general citizens possess no legal mechanism within the building control framework to challenge or override these rejections.</p>
-			<p><strong>➜ <a href="bcd_appeal.html" target="_blank" title="Building Control Rights of Appeal">Explore the absolute legal positions for developers, homeowners, and third parties.</a></strong></p>
-        </div>
+    <div class="container">
+        <header>
 		
-        <div class="faq-block">
-            <p class="faq-question">Doesn't "Judicial Review" protect citizens from bad council decisions?</p>
-            <p class="faq-answer">In theory, yes; in reality, no. Judicial Review is restricted purely to procedural unfairness, not technical error. Furthermore, the financial barrier is insurmountable for most citizens—costing tens of thousands of pounds with a strict three-month filing deadline. It is a tool of the wealthy, not a functional right for the average citizen.</p>
-        </div>
+            <p class="custom1">The Subversion of Public Safety: How the State Stripped British Citizens of Their Statutory Rights	</p>
 
-        <div class="faq-block">
-            <p class="faq-question">If a council passes a fundamentally flawed design, who is responsible for checking it?</p>
-            <p class="faq-answer">Legally, the council remains entirely responsible. However, because citizens have no statutory power to force an audit, mistakes are systematically buried, leaving ordinary people to bear the real-world, long-term structural and financial consequences of local authority negligence.</p>
-        </div>
-
-        <div class="action-banner">
-            <h3>Take Action: Hold the System Accountable</h3>
-            <p>MPs frequently claim that local authorities have robust checks and balances. Use this statutory breakdown to prove to your MP that the primary legislation actively denies British citizens their basic democratic right to transparency and direct oversight.</p>
-            <div class="btn-group">
-                <a href="https://writetothem.com" target="_blank" class="btn btn-mp">Find & Write to Your MP</a>
-                <a href="https://twitter.com:" target="_blank" class="btn">Share on X (Twitter)</a>
-                <a href="https://facebook.com" target="_blank" class="btn">Share on Facebook</a>
-            </div>
-        </div>
-
-        <div class="footer">
-            Document Reference: BA1984-PHA1936/EXCLUSION-NOTICE<br>
-        </div>
+        </header>
+		<section>
+		</p><p class="custom5">By accessing and using this website, you agree to our <a href="terms_of_use.html" target="_blank">Terms of Use</a>, <a href="privacy_policy.html" target="_blank">Privacy Policy</a>, and Legal Disclaimer (see below).</p>
+        <p class="custom6">* The current application of building and public health regulations in the United Kingdom represents a systemic denial of fundamental human rights and a perversion of natural justice. Under the guise of public protection, the state has engineered a legal asymmetry: Ordinary citizens are held to a standard of strict, punitive compliance where ignorance of complex law is aggressively weaponised against them. Yet, through judicial shields like Murphy v Brentwood, the state grants its own authorities absolute civil immunity for their regulatory failures, oversight, and operational ignorance. *
+    </section>				
     
-	        <h2>3.0 Open Letter to All Members of Parliament</h2>
-        
-        <div style="background-color: #fcfcfc; border: 1px solid var(--border-color); padding: 30px; border-radius: 4px; font-size: 16px; text-align: justify;">
-            <p style="font-weight: bold; margin-top: 0; font-family: Arial, sans-serif; color: var(--accent-blue);">TO: All Members of the House of Commons and House of Lords</p>
-            
-            <p>We write to formally draw your urgent legislative attention to an enduring, systemic accountability deficit within UK administrative law—specifically regarding local authority building control determinations under the Building Act 1984.</p>
-            
-            <p>As primary legislation currently stands under Section 16, local authorities hold a strict, non-delegable public function to evaluate, pass, or reject deposited plans. The entire legal burden for administrative and technical accuracy rests solely upon the council. However, should an authority commit a profound technical or procedural error, primary legislation offers absolutely no statutory mechanism for British citizens, neighbouring property owners, or affected third parties to directly audit, review, or appeal that determination.</p>
-            
-            <p>Furthermore, an examination of administrative history reveals that neither the landmark Public Health Act 1936 nor any subsequent amending statutes over the following century have ever imposed an auditing or checking duty onto builders, nor have they ever created a functional mechanism for third-party oversight. This intentional legislative construction creates a severe, unjust regulatory asymmetry: councils hold absolute authority, yet average constituents are entirely locked out of administrative recourse.</p>
-            
-            <p>When administrative failures occur, ordinary British citizens are forced to choose between absorbing severe long-term structural and financial consequences, or pursuing a Judicial Review in the High Court. As parliamentarians, you must recognize that Judicial Review is not a functional right for the average citizen; its narrow focus on raw procedure over technical accuracy, combined with its astronomical financial thresholds, makes it an unattainable remedy for the public at large.</p>
-            
-            <p>This statutory framework systematically protects local authorities from transparency, allows administrative negligence to remain unrectified, and denies British citizens their fundamental right to open justice and direct accountability. MPs can no longer dismiss these concerns by pointing to non-existent "checks and balances" inside local council departments.</p>
-            
-            <p style="font-weight: bold; font-family: Arial, sans-serif; color: var(--primary-color); margin-bottom: 0;">We call upon Parliament to amend primary building legislation to provide ordinary British citizens with a direct, cost-free statutory right to independent audit and administrative appeal when a local authority fails to execute its public law duties lawfully.</p>
-        </div>
+		<main>
+            <div class="lead-text">
+                Published as an independent commentary and public interest review, this webpage exposes how successive UK governments—with the full knowledge and active support of a judiciary that consciously closed the floodgates of justice—have systematically denied British citizens the statutory protections intended by the Public Health Act 1936.
+            </div>
 
-	<!-- COPY FOOTER WITH LEGAL LINKS AND DISCLAIMER. -->
+            <!-- Structured Chronology Section -->
+            <section id="chronology">
+                <h2>The Chronology of State Immunity</h2>
+                <p>Click on any milestone below to jump directly to the detailed analysis of how constitutional principles and statutory obligations were dismantled over time.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1215</div>
+                        <div class="timeline-title">Magna Carta</div>
+                        <p>The foundational bedrock of British liberty. It explicitly established that the Crown is not above the law.</p>
+                        <a href="#section-1215" class="timeline-link">Read detailed analysis &rarr;</a>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">1689</div>
+                        <div class="timeline-title">The Bill of Rights</div>
+                        <p>Cemented the rule of law over the absolute power of the Monarch. It established that public authorities cannot suspend laws.</p>
+                        <a href="#section-1689" class="timeline-link">Read detailed analysis &rarr;</a>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">1765</div>
+                        <div class="timeline-title">Entick v Carrington</div>
+                        <p>A landmark common law ruling declaring that public officials have no inherent right to infringe upon a citizen’s home, life, or property.</p>
+                        <a href="#section-1765" class="timeline-link">Read detailed analysis &rarr;</a>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">1936</div>
+                        <div class="timeline-title">The Public Health Act 1936</div>
+                        <p>Parliament imposes strict duties on local authorities to protect public safety. Statutes are written for the express benefit of British citizens.</p>
+                        <a href="#section-1936" class="timeline-link">Read detailed analysis &rarr;</a>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">1977</div>
+                        <div class="timeline-title">Anns v Merton London Borough Council</div>
+                        <p>The judiciary confirms that authorities owe a duty of care to occupiers and can be sued for negligent building control inspections.</p>
+                        <a href="#section-1777" class="timeline-link">Read detailed analysis &rarr;</a>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">1990</div>
+                        <div class="timeline-title">Murphy v Brentwood District Council</div>
+                        <p>Fearing a "floodgate" of financial claims against public funds, the House of Lords completely overturns legal accountability.</p>
+                        <a href="#section-1990" class="timeline-link">Read detailed analysis &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detailed Information Sections Below -->
+            <section id="section-1215" class="content-section">
+                <h2>1215: Magna Carta</h2>
+                <p>The foundational bedrock of British liberty. It explicitly established that the Crown is not above the law. It promised that justice could not be sold, delayed, or denied, and protected ordinary subjects from arbitrary state overreach.</p>
+            </section>
+
+            <section id="section-1689" class="content-section">
+                <h2>1689: The Bill of Rights</h2>
+                <p>Cemented the rule of law over the absolute power of the Monarch. It established that public authorities cannot suspend laws or execute policies without explicit parliamentary authority, specifically ensuring protection against arbitrary state penalties.</p>
+            </section>
+
+            <section id="section-1765" class="content-section">
+                <h2>1765: Entick v Carrington</h2>
+                <p>A landmark common law ruling declaring that public officials have no inherent right to infringe upon a citizen’s home, life, or property unless explicitly justified by a clear, un-compromised law. The home was deemed an untouchable castle.</p>
+            </section>
+
+            <section id="section-1936" class="content-section">
+                <h2>1936: The Intent of Parliament vs. Executive Failure</h2>
+                <p>When Parliament enacted the <span class="highlight">Public Health Act 1936</span> and its subsequent amendments, it laid down explicit statutory duties. Local authorities were given clear powers to pass, refuse, or conditionally approve building plans. These statutes were not written to shield bureaucracy; they were written for the express benefit, health, and physical safety of British citizens. For decades, the public relied on the state to uphold these minimum standards of safety.</p>
+            </section>
+
+            <section id="section-1777" class="content-section">
+                <h2>1977: The Standard of Accountability (Anns v Merton)</h2>
+                <p>The legal reality of this statutory protection was solidified in 1977 by the landmark ruling in <span class="legal-case">Anns v Merton London Borough Council</span>. The courts explicitly recognised that local authorities owed a private law duty of care to occupiers. If building control inspectors were negligent in checking foundations or structural compliance, they could be held legally and financially accountable by the citizens who suffered the consequences.</p>
+            </section>
+
+            <section id="section-1990" class="content-section">
+                <h2>1990: The Judicial U-Turn and the "Floodgates" Defense (Murphy v Brentwood)</h2>
+                <p>When confronted with the vast scale of local authority systemic failures, the judiciary actively chose to retreat. Fully aware of the statutory framework, and unable to plead ignorance of UK laws, the courts panicked over the financial implications of state liability. To protect public funds from a "floodgate" of legitimate citizen claims, the House of Lords issued the catastrophic 1990 ruling in <span class="legal-case">Murphy v Brentwood District Council</span>.</p>
+                
+                <p>By reclassifying dangerous structural defects as mere "pure economic loss," the judiciary deliberately dismantled the accountability established under <span class="legal-case">Anns</span>. The <span class="legal-case">Murphy v Brentwood</span> decision effectively immunised public bodies, slammed the doors of justice, and left British citizens entirely stripped of their rights at common law.</p>
+            </section>
+
+            <section id="summary" class="content-section">
+                <h2>A Systemic Betrayal</h2>
+                <p>This review document details the profound consequences of that deliberate legal pivot. It traces how successive administrations and a compliant legal system have prioritised institutional self-preservation over the legislative rights of the public—transforming a statutory system built for citizen protection into an unassailable shield for state negligence.</p>
+            </section>
+        </main>
+
+        <!-- COPY FOOTER WITH LEGAL LINKS AND DISCLAIMER. -->
         <footer>
 			<p>© <span id="current-year"></span>. All rights reserved. By accessing and using this website, you agree to our  <a href="terms_of_use.html" target="_blank"><strong>Terms of Use &</strong></a>  <a href="privacy_policy.html" target="_blank"><strong>Privacy Policy</strong></a>.</p>
 			<button id="backToTop" class="back-to-top" title="Go to top" aria-label="Back to top">↑</button>
@@ -303,5 +391,6 @@
         </footer>
 		</div>
 		<!-- COPY TO HERE. -->
+
 </body>
 </html>
